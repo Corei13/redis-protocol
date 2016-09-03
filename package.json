@@ -1,0 +1,30 @@
+{
+  "name": "redis-protocol",
+  "description": "Encodes redis commands into redis protocol",
+  "version": "1.0.0",
+  "author": "Dhananjoy Biswas",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Corei13/redis-protocol.git"
+  },
+  "scripts": {
+    "install": "node_modules/.bin/babel src/ -d lib/",
+    "lint": "node_modules/.bin/eslint ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.1.1",
+    "babel-preset-node5": "^11.1.0"
+  },
+  "dependencies": {
+    "yargs": "^5.0.0"
+  },
+  "babel": {
+    "presets": [
+      "node5"
+    ]
+  }
+}
