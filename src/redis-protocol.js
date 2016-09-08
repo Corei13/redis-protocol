@@ -35,16 +35,12 @@ const parse = command => command
   );
 
 const encode = text => {
-  const protocol = [];
   const { args } = parse(text.trim());
-  if (args.length) {
-    protocol.push(`*${args.length}`);
-    args.forEach(arg => {
-      protocol.push(`$${Buffer.byteLength(arg)}`);
-      protocol.push(arg);
-    });
-  }
-  return protocol;
+  return args.length === 0 ? []
+    : args.reduce(
+      (result, arg) => [...result, `$${Buffer.byteLength(arg)}`, arg],
+      [`*${args.length}`]
+    );
 };
 
 export { encode };
