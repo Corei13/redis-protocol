@@ -6,11 +6,8 @@ Adapted from [redis-mass](https://github.com/almeida/redis-mass).
 
 ## Installation
 
-
 ```bash
-$ git clone git://github.com/Corei13/redis-protocol.git
-cd redis-protocol
-npm run install
+npm install -g Corei13/redis-protocol
 ```
 
 ## Usage
@@ -18,21 +15,21 @@ npm run install
 ### Mass insertion on Redis
 
 ```bash
-$ node lib/index.js -i /path/to/input-file | redis-cli --pipe
+$ redis-protocol /path/to/input-file | redis-cli --pipe
 # Or
-$ cat /path/to/input-file | node lib/index.js | redis-cli --pipe
+$ cat /path/to/input-file | redis-protocol | redis-cli --pipe
 ```
 
 ### Output to console
 
 ```bash
-$ node lib/index.js -i /path/to/input-file
+$ redis-protocol /path/to/input-file
 ```
 
 ### Output to file
 
 ```bash
-$ node lib/index.js -i /path/to/input-file -o /path/to/output-file
+$ redis-protocol /path/to/input-file -o /path/to/output-file
 ```
 
 ## Examples
