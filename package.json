@@ -1,5 +1,5 @@
 {
-  "name": "redis-protocol",
+  "name": "redis-protocol-cli",
   "description": "Encodes redis commands into redis protocol",
   "version": "1.0.0",
   "author": "Dhananjoy Biswas",

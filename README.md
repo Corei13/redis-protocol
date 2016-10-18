@@ -7,7 +7,7 @@ Adapted from [redis-mass](https://github.com/almeida/redis-mass).
 ## Installation
 
 ```bash
-npm install -g Corei13/redis-protocol
+npm install -g redis-protocol-cli
 ```
 
 ## Usage
