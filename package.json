@@ -1,7 +1,7 @@
 {
   "name": "redis-protocol-cli",
   "description": "Encodes redis commands into redis protocol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dhananjoy Biswas",
   "repository": {
     "type": "git",
